@@ -1,0 +1,27 @@
+Conventions for JSX(JavaScript XML)
+-----------------------------------
+
+01. className instead of class 
+02. Can write direct js in attributes
+03. Each tag can have closing like <br/>, <p/>
+04. camelCase for js event like onSubmit instead of onsubmit
+05. write style as object in jsx
+06. Return only one single parent element
+
+example
+
+const Header = () => {
+    // return sigle parent element
+    return (
+        <div className="myClassName">
+            <ul style="{{ background:black;}}">
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+            <button onSubmit="{alert("Hello World")}"></button>
+        </div>
+    );
+};
+
+export default Header;

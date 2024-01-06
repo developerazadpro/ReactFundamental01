@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <div>
-            <ul>
+            <ul className="myList" style={{background:'gray'}}>
                 <li>Home</li>
                 <li>Contact</li>
                 <li>About</li>

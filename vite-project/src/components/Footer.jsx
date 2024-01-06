@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div>
+        <div style={{background:'gray'}}>
             <p>All rights reserved</p>
         </div>
     );
