@@ -18,16 +18,25 @@ const Condition = () => {
 
     
 
-
+    // Array Map
+    // return new array but keep the original array remain unchanged
+    let numbers = [1,5,10,15,20];
+    
+    
 
 
 
     return (
         
         <div>
-            <h2>{result2}</h2>
-            <h3>{result1}</h3>  
-            <button>{
+            {/* <h2>{result2}</h2>
+            <h3>{result1}</h3>   */}
+            <select>Select Quantity : { 
+                numbers.map((num, i) => {
+                    return <option value={i} key={i}>{i} - {num}</option>
+                })
+            }</select>
+            {/* <button>{
                     (() => {
                         if(holiday){
                             return 'Yeah......Holiday';
@@ -35,7 +44,7 @@ const Condition = () => {
                             return 'Ops.......Office';
                         }
                     })()
-            }</button>          
+            }</button>           */}
         </div>
     );
 
